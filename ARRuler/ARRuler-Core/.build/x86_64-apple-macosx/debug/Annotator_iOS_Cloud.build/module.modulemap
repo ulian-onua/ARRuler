@@ -1,0 +1,4 @@
+module Annotator_iOS_Cloud {
+    header "/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.build/Annotator-iOS_Cloud-Swift.h"
+    requires objc
+}

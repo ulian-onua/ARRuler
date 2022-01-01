@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.build/master.swiftdeps"
+  },
+  "/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/Sources/SomeClass.swift": {
+    "dependencies": "/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.build/SomeClass.d",
+    "object": "/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.build/SomeClass.swift.o",
+    "swiftmodule": "/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.build/SomeClass~partial.swiftmodule",
+    "swift-dependencies": "/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.build/SomeClass.swiftdeps"
+  }
+}

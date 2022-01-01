@@ -1,0 +1,78 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "Annotator-iOS_Cloud-Tests-debug.module": ["<Annotator-iOS_Cloud-Tests-debug.module>"]
+  "Annotator-iOS_Cloud-debug.module": ["<Annotator-iOS_Cloud-debug.module>"]
+  "Annotator-iOS_CloudPackageTests-debug.test": ["<Annotator-iOS_CloudPackageTests-debug.test>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<Annotator-iOS_Cloud-debug.module>"]
+  "test": ["<Annotator-iOS_Cloud-Tests-debug.module>","<Annotator-iOS_Cloud-debug.module>","<Annotator-iOS_CloudPackageTests-debug.test>"]
+default: "main"
+nodes:
+  "/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/Sources/":
+    is-directory-structure: true
+  "/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/Tests/":
+    is-directory-structure: true
+commands:
+  "<Annotator-iOS_Cloud-Tests-debug.module>":
+    tool: phony
+    inputs: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud_Tests.build/BaseCloudModelsTests.swift.o","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud_Tests.build/Test.swift.o","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud_Tests.swiftmodule"]
+    outputs: ["<Annotator-iOS_Cloud-Tests-debug.module>"]
+
+  "<Annotator-iOS_Cloud-debug.module>":
+    tool: phony
+    inputs: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.build/SomeClass.swift.o","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.swiftmodule"]
+    outputs: ["<Annotator-iOS_Cloud-debug.module>"]
+
+  "<Annotator-iOS_CloudPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator-iOS_CloudPackageTests.xctest/Contents/MacOS/Annotator-iOS_CloudPackageTests"]
+    outputs: ["<Annotator-iOS_CloudPackageTests-debug.test>"]
+
+  "C.Annotator-iOS_Cloud-Tests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/Tests/BaseCloudModelsTests.swift","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/Tests/Test.swift","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.swiftmodule"]
+    outputs: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud_Tests.build/BaseCloudModelsTests.swift.o","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud_Tests.build/Test.swift.o","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud_Tests.swiftmodule"]
+    executable: "/Users/julian/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "Annotator_iOS_Cloud_Tests"
+    module-output-path: "/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud_Tests.swiftmodule"
+    import-paths: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud_Tests.build"
+    objects: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud_Tests.build/BaseCloudModelsTests.swift.o","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud_Tests.build/Test.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx11.0","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Users/julian/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk","-F","/Users/julian/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Users/julian/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/julian/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-color-diagnostics"]
+    sources: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/Tests/BaseCloudModelsTests.swift","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/Tests/Test.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.Annotator-iOS_Cloud-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/Sources/SomeClass.swift"]
+    outputs: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.build/SomeClass.swift.o","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.swiftmodule"]
+    executable: "/Users/julian/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "Annotator_iOS_Cloud"
+    module-output-path: "/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.swiftmodule"
+    import-paths: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.build"
+    objects: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.build/SomeClass.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.13","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Users/julian/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk","-F","/Users/julian/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Users/julian/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/julian/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.build/Annotator-iOS_Cloud-Swift.h","-color-diagnostics"]
+    sources: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/Sources/SomeClass.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.Annotator-iOS_CloudPackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.build/SomeClass.swift.o","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud_Tests.build/BaseCloudModelsTests.swift.o","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud_Tests.build/Test.swift.o"]
+    outputs: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator-iOS_CloudPackageTests.xctest/Contents/MacOS/Annotator-iOS_CloudPackageTests"]
+    description: "Linking ./.build/x86_64-apple-macosx/debug/Annotator-iOS_CloudPackageTests.xctest/Contents/MacOS/Annotator-iOS_CloudPackageTests"
+    args: ["/Users/julian/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Users/julian/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk","-F","/Users/julian/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Users/julian/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/julian/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug","-o","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator-iOS_CloudPackageTests.xctest/Contents/MacOS/Annotator-iOS_CloudPackageTests","-module-name","Annotator_iOS_CloudPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator-iOS_CloudPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Users/julian/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx11.0","-Xlinker","-add_ast_path","-Xlinker","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/.build/x86_64-apple-macosx/debug/Annotator_iOS_Cloud_Tests.swiftmodule","-L","/Users/julian/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/Sources/","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/Tests/","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/Package.swift","/Users/julian/Documents/Mobres/ARRuler/Packages/ARRuler-Core/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
