@@ -12,6 +12,7 @@
 		B9413A2F2780F7F9007D2E3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9413A2E2780F7F9007D2E3D /* ViewController.swift */; };
 		B9413A342780F7FC007D2E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9413A332780F7FC007D2E3D /* Assets.xcassets */; };
 		B9413A372780F7FC007D2E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9413A352780F7FC007D2E3D /* LaunchScreen.storyboard */; };
+		B9413A44278109A1007D2E3D /* ARRuler-Core in Frameworks */ = {isa = PBXBuildFile; productRef = B9413A43278109A1007D2E3D /* ARRuler-Core */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9413A44278109A1007D2E3D /* ARRuler-Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +43,7 @@
 			children = (
 				B9413A292780F7F9007D2E3D /* ARRuler */,
 				B9413A282780F7F9007D2E3D /* Products */,
+				B9413A42278109A1007D2E3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +69,13 @@
 			path = ARRuler;
 			sourceTree = "<group>";
 		};
+		B9413A42278109A1007D2E3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,6 +92,9 @@
 			dependencies = (
 			);
 			name = ARRuler;
+			packageProductDependencies = (
+				B9413A43278109A1007D2E3D /* ARRuler-Core */,
+			);
 			productName = ARRuler;
 			productReference = B9413A272780F7F9007D2E3D /* ARRuler.app */;
 			productType = "com.apple.product-type.application";
@@ -207,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -262,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +301,7 @@
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +331,7 @@
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,6 +367,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B9413A43278109A1007D2E3D /* ARRuler-Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "ARRuler-Core";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9413A1F2780F7F9007D2E3D /* Project object */;
 }
